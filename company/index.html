@@ -12,8 +12,7 @@
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 </head>
 <body>
-        <!-- Home -->
-        <div id="companyHome" data-role="page">
+        <div data-role="page">
                 <div data-role="header">
                         <a href="../index.html" data-prefetch="true" data-transition="slide" data-direction="reverse">ホーム</a>
                         <h1>会社情報</h1>
@@ -25,7 +24,7 @@
 
                         <h3>所在地</h3>
                         <p>〒101-0025<br />東京都千代田区神田佐久間町1丁目11番地産報佐久間ビル8階</p>
-                        <p><a data-role="button" data-transition="slide" href="#mapLoad">Mapをみる</a></p>
+                        <p><a data-role="button" data-transition="slide" href="map.html">Mapをみる</a></p>
 
                         <h3>連絡先</h3>
                         <ul>
@@ -49,46 +48,6 @@
                         <h3>
                         Copyright © Classmethod.
                         </h3>
-                </div>
-        </div>
-
-        <div data-role="page" id="mapLoad">
-                <div data-role="header">
-                        <a href="#companyHome" data-transition="slide" data-direction="reverse">会社情報</a>
-                        <h1>アクセス</h1>
-                </div>
-                <div id="map" data-role="content">
-                        <script type="text/javascript">
-                                function mapCanvas() {
-                                        var adrs = '東京都千代田区神田佐久間町1丁目11番地';	// 長野県塩尻市
-                                        var gc = new google.maps.Geocoder();
-                                        gc.geocode({ address : adrs }, function(results, status){
-                                                if (status == google.maps.GeocoderStatus.OK) {
-                                                        var myOptions = {
-                                                        zoom: 15,
-                                                        center: results[0].geometry.location,
-                                                        mapTypeControl: false,
-                                                        navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-                                                        mapTypeId: google.maps.MapTypeId.ROADMAP
-                                                        };
-                                                        var map = new google.maps.Map(document.getElementById("map"), myOptions);
-                                                        var marker = new google.maps.Marker({
-                                                                position: results[0].geometry.location, 
-                                                                map: map,
-                                                                title:adrs
-                                                        });
-                                                } else {
-                                                        alert(status+" : ジオコードに失敗しました");
-                                                }
-                                        });
-
-                                        var pageHeight = $(document).height();
-                                        $("#map").css("height", pageHeight);
-                                }
-
-                                $('#mapLoad').bind('pageshow',mapCanvas);
-                        </script>
-                </div>
                 </div>
         </div>
 </body>
