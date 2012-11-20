@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html manifest="web.appcache">
 <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
         <meta name="viewport" content="width=device-width, maximum-scale=1.5, minimum-scale=1.0,user-scalable=yes,initial-scale=1.0"/>
-        <link rel="apple-touch-icon-precomposed" href="../images/apple-icon.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/apple-icon.png"/>
         <title>
         クラスメソッド株式会社
         </title>
@@ -17,11 +16,12 @@
 </head>
 <body>
         <!-- Home -->
-        <div data-role="page" id="page1">
+        <div data-role="page">
+                <div data-role="header">
+                        <a href="http://dev.classmethod.jp/" data-transition="flip" target="_blank">ブログ</a>
+                        <h1>クラスメソッド（株）</h1>
+                </div>
                 <div data-role="content">
-                        <div style="margin: -15px -15px 15px -15px; padding: 10px 0 10px 0; text-align: center; background: url(http://d1ud0q00rvnjdg.cloudfront.net/common/images/bg_blue_01.png) repeat 0 0 #093b81;">
-                        <img src="http://d1ud0q00rvnjdg.cloudfront.net/wp-content/uploads/2012/07/site_id.png" alt="image" />
-                        </div>
                         <p>スマートフォン＆クラウドのシステム開発のクラスメソッド</p>
 
                         <ul data-role="listview" data-divider-theme="a" data-inset="true">
@@ -45,7 +45,7 @@
                                 サービス
                                 </li>
                                 <li data-theme="c">
-                                        <a href="services/aws/html" data-transition="slide">
+                                        <a href="services/aws.html" data-transition="slide">
                                                 <h3>AWSインフラ構築とシステム開発のプロ</h3>
                                                 <p>可用性・堅牢性・柔軟性を今日から手に入れる</p>
                                         </a>
@@ -78,7 +78,7 @@
                         </ul>
                 </div>
 
-                <div data-theme="a" data-role="footer">
+                <div data-role="footer">
                         <h3>
                         Copyright © Classmethod.
                         </h3>

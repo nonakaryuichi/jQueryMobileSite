@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html manifest="../../web.appcache">
 <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="viewport" content="width=device-width, maximum-scale=1.5, minimum-scale=1.0,user-scalable=yes,initial-scale=1.0"/>
+        <link rel="apple-touch-icon-precomposed" href="../../images/apple-icon.png"/>
         <title>
         2012年11月02日のお知らせ｜アマゾンクラウド｜お知らせ｜クラスメソッド株式会社
         </title>
@@ -13,9 +16,9 @@
 </head>
 <body>
         <!-- Home -->
-        <div data-role="page" id="page1">
-                <div data-role="header">
-                        <a href="../index.html" data-prefetch="true" data-transition="slide" data-direction="reverse">クラウド</a>
+        <div data-role="page">
+                <div data-role="header" data-position="fixed">
+                        <a href="../index.html" data-prefetch="true" data-transition="slide" data-direction="reverse" data-icon="back">クラウド</a>
                         <h1>2012年11月02日</h1>
                 </div>
                 <div data-role="navbar">
@@ -35,7 +38,7 @@
                         <p>お知らせ文章が入ります。お知らせ文章が入ります。お知らせ文章が入ります。お知らせ文章が入ります。お知らせ文章が入ります。お知らせ文章が入ります。お知らせ文章が入ります。</p>
                 </div>
 
-                <div data-theme="a" data-role="footer">
+                <div data-role="footer">
                         <h3>
                         Copyright © Classmethod.
                         </h3>

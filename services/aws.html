@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html manifest="../web.appcache">
 <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="viewport" content="width=device-width, maximum-scale=1.5, minimum-scale=1.0,user-scalable=yes,initial-scale=1.0"/>
+        <link rel="apple-touch-icon-precomposed" href="../images/apple-icon.png"/>
         <title>
         アマゾンクラウド｜サービス｜クラスメソッド株式会社
         </title>
@@ -13,16 +16,40 @@
 </head>
 <body>
         <!-- Home -->
-        <div data-role="page" id="page1">
-                <div data-role="header">
-                        <a href="index.html" data-prefetch="true" data-transition="slide" data-direction="reverse">サービス</a>
+        <div data-role="page">
+                <div data-role="header" data-position="fixed">
+                        <a href="index.html" data-prefetch="true" data-transition="slide" data-direction="reverse" data-icon="back">サービス</a>
                         <h1>アマゾンクラウド</h1>
                 </div>
 
                 <div data-role="content">
+                        <h2>可用性・堅牢性・柔軟性を今日から手に入れる事ができます</h2>
+
+                        <div data-role="collapsible-set" data-content-theme="d">
+                                <div data-role="collapsible" data-collapsed="false">
+                                        <h2>スピード対応</h2>
+                                        <p>お申し込み頂いてから最短で当日にご利用頂けるようにアカウント発行からサーバー構築します。</p>
+                                </div>
+                                <div data-role="collapsible">
+                                        <h2>ご提供価格</h2>
+                                        <p>自社で既に持っている構築・運用ノウハウをそのままご提供するため価格を下げることができました。また、訪問でのお打合せやドキュメント類の作成等を最小限にすることでさらにご提供価格を下げます。</p>
+                                </div>
+                                <div data-role="collapsible">
+                                        <h2>経験と実績</h2>
+                                        <p>Webアプリケーション開発の実績は200プロジェクト以上。これらのシステムが動くプラットフォームの設計や構築も多数。現在は、全てのプロジェクトをAmazonクラウドでの動作を前提にしています。</p>
+                                </div>
+                        </div>
+
+                        <p>「Amazonクラウドってこんなに凄かったんですね。」これはお客様の声です。</p>
+                        <p>運用コストを削減したい。明日までにサーバーが100台必要だ。高度なセキュリティを施したい。海外にデータをバックアップしたい。仮想ネットワークを組みたい。Webサーバを運用したい。Webアプリを開発したい。データベースを止めたくない。24時間365日で運用監視をしたい。自社のデータセンターと繋ぎたい。海外向けにコンテンツを配信したい。プロセスを監視したい。ドメインを取得してSSLの設定をしたい。自社のインフラについて相談に乗ってほしい。 … 様々なご相談を頂いています。</p>
+                        <p>当社では、Amazonクラウドに特化したサービスを提供する前から上記のような相談を個別に頂いていました。そして、「もっと多くのお客様に良いサービスを使ってもらいたい」という思いからソリューションとしてご提供することにしました。全てのサービスは、当社での実績に基づいてご提供していますので、スピード・価格・実績などでご好評を頂いております。</p>
+
+                        <p><a href="../inquiry/index.html" data-role="button" data-transition="flip">お問い合わせ</a></p>
                 </div>
 
-                <div data-theme="a" data-role="footer">
+                
+
+                <div data-role="footer">
                         <h3>
                         Copyright © Classmethod.
                         </h3>
