@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        お問い合わせ｜クラスメソッド株式会社
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+                <div data-role="header">
+                        <a href="../index.html" data-prefetch="true" data-transition="slide" data-direction="reverse">ホーム</a>
+                        <h1>お問い合わせ</h1>
+                </div>
+
+                <div data-role="content">
+                        <h2>お問い合わせフォーム</h2>
+                        <form action="#" method="post">
+                                <div data-role="fieldcontain">
+                                        <label for="type">お問い合わせの種類:</label>
+                                        <select name="type" id="type">
+                                                <option value="service">サービス</option>
+                                                <option value="recruit">採用</option>
+                                                <option value="etc">その他</option>
+                                        </select>
+                                </div>
+
+                                <div data-role="fieldcontain">
+	                                <label for="username">お名前:</label>
+	                                <input type="text" name="username" id="username" value="" placeholder="お名前"/>
+                                </div>
+
+                                <div data-role="fieldcontain">
+	                                <label for="mail">メールアドレス:</label>
+	                                <input type="email" name="mail" id="mail" value="" placeholder="メールアドレス"/>
+                                </div>
+
+                                <div data-role="fieldcontain">
+	                                <label for="tel">電話番号:</label>
+	                                <input type="text" name="tel" id="tel" value="" placeholder="電話番号"/>
+                                </div>
+
+                                <div data-role="fieldcontain">
+	                                <label for="text">お問い合わせ内容:</label>
+                                        <textarea name="text" id="text" value=""></textarea>
+                                </div>
+
+                                <div data-role="fieldcontain">
+	                                <input type="submit" name="submit" id="submit" value="お問い合わせ" />
+                                </div>
+                        </form>
+                </div>
+
+                <div data-theme="a" data-role="footer">
+                        <h3>
+                        Copyright © Classmethod.
+                        </h3>
+                </div>
+        </div>
+</body>
+</html>
