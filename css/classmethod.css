@@ -511,16 +511,16 @@
 }
 .ui-body-d,
 .ui-overlay-d {
-	border: 1px solid #778d3a /*{d-body-border}*/;
+	border: 1px solid #a29557 /*{d-body-border}*/;
 	color: #333333 /*{d-body-color}*/;
 	text-shadow: 0 /*{d-body-shadow-x}*/ 1px /*{d-body-shadow-y}*/ 0 /*{d-body-shadow-radius}*/ #f6feec /*{d-body-shadow-color}*/;
-	background: #e0f4a9 /*{d-body-background-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #f6FFb9 /*{d-body-background-start}*/), to( #c9db98 /*{d-body-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #f6FFb9 /*{d-body-background-start}*/, #c9db98 /*{d-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #f6FFb9 /*{d-body-background-start}*/, #c9db98 /*{d-body-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #f6FFb9 /*{d-body-background-start}*/, #c9db98 /*{d-body-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #f6FFb9 /*{d-body-background-start}*/, #c9db98 /*{d-body-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #f6FFb9 /*{d-body-background-start}*/, #c9db98 /*{d-body-background-end}*/);
+	background: #f7f2ba /*{d-body-background-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #fef9bf /*{d-body-background-start}*/), to( #efeab4 /*{d-body-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #fef9bf /*{d-body-background-start}*/, #efeab4 /*{d-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #fef9bf /*{d-body-background-start}*/, #efeab4 /*{d-body-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #fef9bf /*{d-body-background-start}*/, #efeab4 /*{d-body-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #fef9bf /*{d-body-background-start}*/, #efeab4 /*{d-body-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #fef9bf /*{d-body-background-start}*/, #efeab4 /*{d-body-background-end}*/);
 }
 .ui-overlay-d {
 	background-image: none;
