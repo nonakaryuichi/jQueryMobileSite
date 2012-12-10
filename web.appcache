@@ -2,7 +2,7 @@ CACHE MANIFEST
 
 # Revision: 201201120-2133
 ## Cache Files
-#CACHE:
+CACHE:
 http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css
 http://code.jquery.com/mobile/1.2.0/images/icons-18-white.png
 http://code.jquery.com/mobile/1.2.0/images/icons-18-black.png
@@ -39,6 +39,6 @@ inquiry/index.html
 company/index.html
 
 ## Network files
-#NETWORK:
+NETWORK:
 company/map.html
 http://maps.google.com/maps/api/js?sensor=false
